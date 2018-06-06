@@ -17,15 +17,17 @@ package org.jboss.hal.client.configuration.subsystem.infinispan;
 
 import org.jboss.hal.dmr.ModelNode;
 import org.jboss.hal.dmr.NamedNode;
-import org.jboss.hal.dmr.Property;
 
 class CacheContainer extends NamedNode {
 
-    CacheContainer(Property property) {
-        super(property);
+    private boolean remote;
+
+    CacheContainer(String name, boolean remote, ModelNode node) {
+        super(name, node);
+        this.remote = remote;
     }
 
-    CacheContainer(String name, ModelNode node) {
-        super(name, node);
+    boolean isRemote() {
+        return remote;
     }
 }

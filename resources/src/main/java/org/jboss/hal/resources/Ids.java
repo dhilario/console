@@ -68,6 +68,7 @@ public interface Ids {
     String CACHE_COMPONENT_TRANSACTION = "cache-component-transaction";
     String CACHE_CONTAINER = "cc";
     String CACHE_CONTAINER_ADD = "cc-add";
+    String CACHE_CONTAINER_ADD_ACTIONS = "cc-add-actions";
     String CACHE_CONTAINER_FORM = "cc-form";
     String CACHE_CONTAINER_ITEM = "cc-item";
     String CACHE_CONTAINER_REFRESH = "cc-refresh";
@@ -549,6 +550,7 @@ public interface Ids {
     String PROFILE_REFRESH = "profile-refresh";
     String REFERENCE_SERVER_EMPTY = "reference-server-empty";
     String REFRESH = "refresh";
+    String REMOTE_CACHE_CONTAINER_ADD = "rcc-add";
     String REMOTING_CONNECTOR_FORM = "remoting-connector-form";
     String REMOTING_CONNECTOR_SECURITY_FORM = "remoting-connector-security-form";
     String REMOTING_CONNECTOR_SECURITY_POLICY_FORM = "remoting-connector-security-policy-form";
@@ -837,6 +839,10 @@ public interface Ids {
      */
     static String principal(String type, String name) {
         return build(type, name);
+    }
+
+    static String remoteCacheContainer(String name) {
+        return Ids.build("rcc", name);
     }
 
     static String resourceAdapter(String name) {

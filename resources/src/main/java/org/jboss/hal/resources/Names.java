@@ -270,6 +270,7 @@ public interface Names {
     String RELAY = "Relay";
     String REMOTE = "Remote";
     String REMOTE_ACCEPTOR = "Remote Acceptor";
+    String REMOTE_CACHE_CONTAINER = "Remote Cache Container";
     String REMOTE_COMMAND = "Remote Command";
     String REMOTE_CONNECTOR = "Remote Connector";
     String REMOTE_CONNECTOR_SECURITY = "Remote Connector Security";
